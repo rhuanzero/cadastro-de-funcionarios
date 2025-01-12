@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+#menu {
+    background-color: bisque;
+    text-align: center;
+    padding: 10px;
+}
+
+#menu button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+#cadastro{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    color: brown;
+}
+
+#painel1 {
+    margin: 10px;
+}
+
+#funcionarios {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.funcionarios {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#funcionarios thead td {
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    background-color: darkslateblue;
+    color: white;
+}
+
+#funcionarios td {
+    border: 1px solid darkslateblue;
+    text-align: center;
+    background-color: lightblue;
+}
+
+#funcionarios tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+.erro {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.errook {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+
+
+#novoFuncionario {
+    margin-top: 10px;
+}
+
+
+.estadocivil {
+    text-align: left !important;
+    padding: 10px;
+}
+
+.tabela{
+    text-align: center;
+    padding: 2px 5px;
+}
+
+.tabela2{
+    padding: 2px 5px;
+}

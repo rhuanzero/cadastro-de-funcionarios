@@ -1,58 +1,58 @@
-# cadastro-de-funcionarios
-Este projeto é uma aplicação front-end desenvolvida em HTML, CSS e JavaScript para administrar o cadastro de funcionários. Ele permite incluir, editar e excluir funcionários, com validações de dados e persistência dos registros na própria página.
+# Cadastro de Funcionários
 
-Funcionalidades:
+Este projeto é uma aplicação web interativa para gerenciamento de funcionários, permitindo cadastro, edição e exclusão de dados por meio de uma interface dinâmica.
 
-Tabela de Funcionários:
-Inicialmente, a tabela está vazia, exibindo apenas o cabeçalho.
-Ao clicar no botão "Novo Funcionário", uma nova linha é adicionada à tabela para inclusão de dados.
+## 📋 Funcionalidades
 
-Inclusão de Funcionários:
-Campos para inclusão de novos funcionários:
-CPF: Número inteiro de 11 dígitos.
-Nome: Mínimo de 4 caracteres.
-Data de Nascimento: Funcionário deve ter 14 anos ou mais.
-Estado Civil: Seleção obrigatória entre "Casado", "Solteiro", "Viúvo" e "Divorciado".
-Função: Seleção obrigatória entre "Estagiário", "Suporte", "Programador", "Analista Jr", "Analista Pl", "Analista Sr" e "Gerente".
-Salário: Valor entre 1.500,00 e 50.000,00.
-Validação dos dados e exibição de mensagens de erro, se necessário.
-Botões "Salvar" e "Cancelar" para confirmar ou cancelar a inclusão.
+- **Adicionar funcionários** preenchendo os seguintes campos:
+  - CPF (formato válido: `999.999.999-99`)
+  - Nome (mínimo 4 caracteres)
+  - Data de nascimento (idade mínima: 14 anos)
+  - Estado civil (`Casado`, `Solteiro`, `Viúvo`, `Divorciado`)
+  - Função (`Estagiário`, `Suporte`, `Programador`, `Analista Jr`, `Analista Pl`, `Analista Sr`, `Gerente`)
+  - Salário (entre R$1500,00 e R$50000,00)
+- **Excluir funcionários** da tabela.
+- **Editar funcionários**, permitindo a alteração de seus dados.
+- **Validações dinâmicas** com mensagens de erro exibidas abaixo dos campos inválidos.
+- **Interface interativa**, sem necessidade de recarregar a página.
 
-Edição de Funcionários:
-Ao clicar no botão "Alterar", os campos do funcionário são habilitados para edição.
-Validação dos dados atualizados.
-Botões "Salvar" e "Cancelar" para confirmar ou cancelar a edição.
+## 🛠️ Conceitos Utilizados
 
-Exclusão de Funcionários:
-Ao clicar no botão "Excluir", o funcionário é removido da tabela.
+### 🔹 HTML
+- Estruturação da página utilizando **tabelas (`<table>`)** para exibição dos dados.
+- Formulários dinâmicos dentro da tabela, utilizando **`<input>` e `<select>`** para entrada de dados.
+- Uso de **botões (`<button>`)** para interatividade (Novo Funcionário, Salvar, Editar, Excluir).
 
-Formatação dos Dados:
-CPF: Exibido no formato 999.999.999-99.
-Data de Nascimento: Exibida no formato DD/MM/AAAA.
-Salário: Exibido com vírgula decimal (ex: R$ 1.500,00).
+### 🎨 CSS
+- Estilização da interface utilizando **seletores CSS** para diferenciar estados dos elementos.
+- Uso de **Flexbox e Display Table** para organização dos elementos.
+- Manipulação de cores e bordas para realçar estados (erros, botões desativados, etc.).
 
-Tecnologias Utilizadas
-HTML: Estrutura da página e tabela de funcionários.
-CSS: Estilização da tabela, botões e campos de formulário.
-JavaScript: Lógica de programação para validação, inclusão, edição e exclusão de funcionários.
+### ⚡ JavaScript
+- Manipulação do **DOM** para adicionar, remover e modificar elementos da tabela.
+- Uso de **event listeners** (`addEventListener`) para capturar ações do usuário.
+- **Validação de entrada de dados** antes da inserção na tabela.
+- Aplicação de **formatos específicos** (ex: CPF `999.999.999-99`, data `DD/MM/AAAA`).
+- Alteração dinâmica de elementos via **`innerHTML` e `outerHTML`**.
+- Uso de **query selectors** para recuperar e modificar valores de `<input>` e `<select>`.
+- Implementação de **botões dinâmicos** (ativação/desativação conforme estado da interface).
 
-Como Usar
-Clone o repositório:
-git clone https://github.com/seu-usuario/cadastro-de-funcionarios.git
-Abra o arquivo cadastro.html no seu navegador.
+## 📂 Estrutura do Projeto
 
-Incluir Funcionários:
-Clique no botão "Novo Funcionário" e preencha os campos com os dados do funcionário.
-Clique em "Salvar" para confirmar ou "Cancelar" para descartar.
+📦 **cadastro-de-funcionarios**  
+📜 **index.html** → Estrutura da página e tabela de funcionários  
+📜 **styles.css** → Estilos visuais para a interface  
+📜 **script.js** → Lógica para adicionar, editar e excluir funcionários  
 
-Editar Funcionários:
-Clique no botão "Alterar" na linha do funcionário desejado.
-Faça as alterações necessárias e clique em "Salvar" para confirmar ou "Cancelar" para descartar.
+## 🖥️ Como Executar
 
-Excluir Funcionários:
-Clique no botão "Excluir" na linha do funcionário que deseja remover.
+1. Clone o repositório:  
+   ```sh
+   git clone https://github.com/rhuanzero/cadastro-de-funcionarios.git
 
-Estrutura do Projeto
-cadastro.html: Contém a estrutura HTML da página.
-cadastro.css: Contém os estilos CSS para a página.
-cadastro.js: Contém a lógica JavaScript para manipulação dos dados e interações.
+2. Acesse a pasta do projeto:
+    ```sh
+    cd cadastro-de-funcionarios
+3. Abra o arquivo cadastro.html no navegador.
+
+
